@@ -1,0 +1,5 @@
+clang++ -m32 -c Sound.cpp --stdlib=libc++
+clang++ -m32 Sound.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system -lsfml-network -lsfml-audio
+
+clang++ -c clock.cpp --stdlib=libc++
+clang++ clock.o -o sfml-clock -lsfml-graphics -lsfml-window -lsfml-system -lsfml-network -lsfml-audio
